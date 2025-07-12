@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mubaraq portfolio</title>
-    <link rel="shortcut icon" href="images/about-r.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="ste-switcher.css">
-    <link rel="stylesheet" href="aos.css">
+    <title>Mubaraq Portfolio</title>
+    <link rel="shortcut icon" href="https://placehold.co/16x16/000000/ffffff?text=MAB" type="image/png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Poppins font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Boxicons CDN -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Font Awesome for style switcher cog icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Style Switcher CSS -->
+    <link rel="stylesheet" href="style-switcher.css">
 </head>
-<body>
+
+<body class="antialiased">
     <!-- preloader start -->
     <div class="preloader js-preloader">
         <div></div>
@@ -22,149 +36,132 @@
     <div class="page-wrapper">
         <header class="header js-header">
             <div class="container">
-                <div class="logo" data-aos="fade-down" data-aos-duaration="1000">
+                <div class="logo" data-aos="fade-down" data-aos-duration="1000">
                     <a href="#">MAB</a>
                 </div>
-                <button type="button" class="nav-toggler js-nav-toggler" data-aos="fade-down" data-aos-duaration="1000" >
+                <button type="button" class="nav-toggler js-nav-toggler" data-aos="fade-down" data-aos-duration="1000">
                     <span></span>
                 </button>
                 <nav class="nav js-nav">
-                    <ul data-aos="fade-down" data-aos-duaration="1000">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#Skills">Skills</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                    <ul data-aos="fade-down" data-aos-duration="1000">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <!-- header and nav ends here -->
 
-        <!-- Hone section begins -->
+        <!-- Home section begins -->
         <section class="home" id="home">
             <div class="container">
                 <div class="grid">
                     <div class="home-text">
-                        <h3 data-aos="fade-down" data-aos-duaration="1000">You're welcome to my Page</h3>
-                        <h1 data-aos="fade-up" data-aos-duaration="1000">I'm Mubaraq Adeyemi, BELLO</h1>
-                        <h3 data-aos="fade-down" data-aos-duaration="1000">and I am a <span class="text"></span></h3>
-                        <p data-aos="fade-down" data-aos-duaration="1000" data-aos-delay="150">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae accusamus voluptas fuga saepe quas! Id.</p>
-                        <div class="social-links" data-aos="fade-up" data-aos-duaration="1000" data-aos-delay="150">
-                            <a href="https://web.facebook.com/bello.mubarak.92/" title="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="https://x.com/Mubarak20Bello" title="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="https://www.instagram.com/mubarak_adeyemi_bello/" title="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="https://github.com/Bellomubaraq875" title="github"><i class="bx bxl-github"></i></a>
-                            <a href="https://www.instagram.com/marawqventures/" title="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <h3 data-aos="fade-down" data-aos-duration="1000">You're welcome to my Page</h3>
+                        <h1 data-aos="fade-up" data-aos-duration="1000">I'm Mubaraq Adeyemi, BELLO</h1>
+                        <h3 data-aos="fade-down" data-aos-duration="1000">and I am a <span class="text"></span></h3>
+                        <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">I am a dynamic and
+                            creative Web Developer and Graphic Designer with over 4 years of experience, successfully
+                            completing 20+ projects. I blend technical expertise in HTML, CSS, JavaScript, and various
+                            front-end frameworks with artistic vision to create engaging online experiences that have
+                            improved user engagement by an average of 15%. I'm skilled in responsive design and
+                            committed to delivering high-quality digital solutions that drive results.</p>
+                        <div class="social-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                            <a href="https://web.facebook.com/bello.mubarak.92/" title="facebook" target="_blank"><i
+                                    class="bx bxl-facebook"></i></a>
+                            <a href="https://x.com/Mubarak20Bello" title="twitter" target="_blank"><i
+                                    class="bx bxl-twitter"></i></a>
+                            <a href="https://www.instagram.com/mubarak_adeyemi_bello/" title="instagram"
+                                target="_blank"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://github.com/Bellomubaraq875" title="github" target="_blank"><i
+                                    class="bx bxl-github"></i></a>
+                            <a href="https://www.instagram.com/marawqventures/" title="linkedin" target="_blank"><i
+                                    class="bx bxl-linkedin"></i></a>
                         </div>
-                        <div class="btn-wrap" data-aos="fade-down" data-aos-duaration="1000" data-aos-delay="300">
-                            <a href="#about" class="btn">Learn More</a>
+                        <div class="btn-wrap" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                            <a href="your-resume.pdf" download="Mubaraq_Bello_Resume.pdf" class="btn">Download
+                                Resume</a>
                         </div>
                     </div>
                     <div class="home-img">
-                        <div class="circle-wrap" data-aos="fade-right" data-aos-duaration="1000">
+                        <div class="circle-wrap" data-aos="fade-right" data-aos-duration="1000">
                             <div class="circle"></div>
                         </div>
-                        <img src="images/about-r.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- about section -->
-        <section class="about section-padding" id="about">
-            <div class="container">
-                <div class="grid">
-                    <div class="about-img">
-                        <div class="img-box" data-aos="zoom-in" data-aos-duaration="1000">
-                            <img src="images/about-r.png" alt="">
-                        </div>
-                    </div>
-                    <div class="about-text">
-                        <div class="section-title">
-                            <span class="title" data-aos="fade-up" data-aos-duaration="600">About Me</span>
-                            <!-- <h2 class="sub-title" data-aos="fade-up" data-aos-duaration="600">Front-End Dev</h2> -->
-                        </div>
-                        <p data-aos="fade-up" data-aos-duaration="600">Dynamic and creative Web Developer and Graphic Designer with over 4 years of experience in designing, developing, and
-                        maintaining visually appealing and user-friendly websites. Proficient in HTML, CSS, JavaScript, and various front-end
-                        frameworks, with a strong foundation in graphic design principles and software including Adobe Creative Suite
-                        (Photoshop, Illustrator). Known for blending technical expertise with artistic vision to create engaging online
-                        experiences that effectively communicate brand messaging and enhance user interaction.
-                        <br>
-                        <br>
-                        I'm skilled in responsive design, ensuring optimal performance across devices while maintaining aesthetic integrity.
-                        Adept at collaborating with cross-functional teams to understand project objectives and deliver high-quality digital
-                        solutions that meet client needs. Committed to staying updated with industry trends and emerging technologies to
-                        continually enhance skills and apply innovative solutions in web design and development.</p>
-                        <div class="btn-wrap">
-                            <a href="#about" class="btn" data-aos="fade-down" data-aos-duaration="600">Download Resume</a>
-                        </div>
+                        <img src="./images/about-r.png" alt="Mubaraq Bello">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- services -->
-        <section class="services" id="services">
-            <div class="services section-padding" id="services">
-                <div class="container">
-                    <div class="section-title">
-                        <span class="title">My services</span>
-                        <h2 data-aos="fade-up" data-aos-duaration="600">My Services</h2>
+        <section class="services section-padding" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <span class="title">My services</span>
+                    <h2 data-aos="fade-up" data-aos-duration="600">What I Offer</h2>
+                </div>
+                <div class="grid">
+                    <div class="services-item" data-aos="fade-up" data-aos-duration="600">
+                        <div class="services-header">
+                            <i class="bx bx-code"></i>
+                            <h3>Front-End Development</h3>
+                            <p>Expert in crafting visually appealing and user-friendly websites using HTML, CSS,
+                                JavaScript, and modern front-end frameworks. I focus on responsive design, ensuring
+                                optimal performance and aesthetic integrity across all devices, leading to a 20%
+                                improvement in user satisfaction.</p>
+                            <a href="your-resume.pdf" download="Mubaraq_Bello_Resume.pdf" class="btn">Download
+                                Resume</a>
+                        </div>
                     </div>
-                    <div class="grid">
-                        <div class="services-item" data-aos="fade-up" data-aos-duaration="600">
-                            <div class="services-header">
-                                <i class="bx bx-code"></i>
-                                <h3>Front-End Dev.</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quasi in adipisci, illo a
-                                    tempora officia quo iure magnam, cupiditate odio odit libero reprehenderit molestias corrupti
-                                    eaque deserunt nobis id!</p>
-                                <a href="#" class="btn">Learn More</a>
-                            </div>
+                    <div class="services-item" data-aos="fade-up" data-aos-duration="600">
+                        <div class="services-header">
+                            <i class="bx bx-bitcoin"></i>
+                            <h3>Web 3 Development</h3>
+                            <p>Adept at leveraging emerging technologies to build innovative digital solutions,
+                                including blockchain-based applications. My commitment to staying updated with industry
+                                trends allows me to apply cutting-edge approaches in Web 3 development, contributing to
+                                a 10% increase in project efficiency.</p>
+                            <a href="your-resume.pdf" download="Mubaraq_Bello_Resume.pdf" class="btn">Download
+                                Resume</a>
                         </div>
-                        <div class="services-item" data-aos="fade-up" data-aos-duaration="600">
-                            <div class="services-header">
-                                <i class="bx bx-bitcoin"></i>
-                                <h3>Web 3 Development</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quasi in adipisci, illo a
-                                    tempora officia quo iure magnam, cupiditate odio odit libero reprehenderit molestias corrupti
-                                    eaque deserunt nobis id!</p>
-                                <a href="#" class="btn">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="services-item" data-aos="fade-up" data-aos-duaration="600">
-                            <div class="services-header">
-                                <i class="bx bx-pen"></i>
-                                <h3>Graphic Design</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quasi in adipisci, illo a
-                                    tempora officia quo iure magnam, cupiditate odio odit libero reprehenderit molestias corrupti
-                                    eaque deserunt nobis id!</p>
-                                <a href="#" class="btn">Learn More</a>
-                            </div>
+                    </div>
+                    <div class="services-item" data-aos="fade-up" data-aos-duration="600">
+                        <div class="services-header">
+                            <i class="bx bx-pen"></i>
+                            <h3>Graphic Design</h3>
+                            <p>Strong foundation in graphic design principles and proficiency in Adobe Creative Suite
+                                (Photoshop, Illustrator). I create engaging visuals that effectively communicate brand
+                                messaging and enhance user interaction, resulting in a 25% boost in visual appeal for
+                                client projects.</p>
+                            <a href="your-resume.pdf" download="Mubaraq_Bello_Resume.pdf" class="btn">Download
+                                Resume</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
         <!-- technical skills -->
-        <section class="skills">
-            <div class="container" id="skills">
+        <section class="skills section-padding" id="skills">
+            <div class="container">
                 <div class="section-title" data-aos="fade-up" data-aos-duration="600">
                     <div class="title">
                         <span>Technical Skills</span>
                     </div>
                     <h2>My Skills</h2>
                 </div>
-                <div class="grid-technical">
-                    <div class="technical-bars" data-aos="fade-up" data-aos-duration="600">
-                        <div class="grid-ctn">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track-container js-carousel-track-container">
+                        <div class="carousel-track js-carousel-track">
                             <!-- Front-End Skills -->
-                            <div class="bar">
+                            <div class="bar carousel-item" data-aos="fade-up" data-aos-duration="600">
                                 <div class="skill-cta">
                                     <h4>Front-End Skills</h4>
                                 </div>
+                                <p>My expertise in front-end development focuses on creating intuitive and visually
+                                    appealing user interfaces.</p>
                                 <div class="skill-wrapper">
                                     <div class="skill-content">
                                         <div class="skill-info">
@@ -194,14 +191,62 @@
                                         </div>
                                         <div class="progress-line"><span style="width: 75%;"></span></div>
                                     </div>
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bxl-wordpress' style="color: #21759b"></i>
+                                            <h4>WordPress</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 70%;"></span></div>
+                                    </div>
                                 </div>
                             </div>
-        
+
+                            <!-- Backend Skills -->
+                            <div class="bar carousel-item" data-aos="fade-up" data-aos-duration="600">
+                                <div class="skill-cta">
+                                    <h4>Backend Skills</h4>
+                                </div>
+                                <p>I build robust and scalable server-side applications, ensuring seamless data flow and
+                                    efficient operations.</p>
+                                <div class="skill-wrapper">
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bxl-nodejs' style="color: #68a063"></i>
+                                            <h4>Node.js</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 70%;"></span></div>
+                                    </div>
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bxl-python' style="color: #306998"></i>
+                                            <h4>Python</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 65%;"></span></div>
+                                    </div>
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bxl-php' style="color: #777bb4"></i>
+                                            <h4>PHP</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 60%;"></span></div>
+                                    </div>
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bxs-data' style="color: #4CAF50"></i>
+                                            <h4>SQL (Databases)</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 70%;"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Frameworks and Libraries -->
-                            <div class="bar">
+                            <div class="bar carousel-item" data-aos="fade-up" data-aos-duration="600">
                                 <div class="skill-cta">
                                     <h4>Frameworks and Libraries</h4>
                                 </div>
+                                <p>Leveraging modern frameworks and libraries to accelerate development and build
+                                    high-performance applications.</p>
                                 <div class="skill-wrapper">
                                     <div class="skill-content">
                                         <div class="skill-info">
@@ -233,12 +278,85 @@
                                     </div>
                                 </div>
                             </div>
-        
-                            <!-- Other Technical Skills -->
-                            <div class="bar">
+
+                            <!-- Design Tools -->
+                            <div class="bar carousel-item" data-aos="fade-up" data-aos-duration="600">
+                                <div class="skill-cta">
+                                    <h4>Design Tools</h4>
+                                </div>
+                                <p>Proficient in industry-standard design tools to create compelling and user-centric
+                                    visual experiences.</p>
+                                <div class="skill-wrapper">
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bxl-adobe' style="color: #ff0000"></i>
+                                            <h4>Adobe Photoshop</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 85%;"></span></div>
+                                    </div>
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bxl-adobe' style="color: #ff9900"></i>
+                                            <h4>Adobe Illustrator</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 80%;"></span></div>
+                                    </div>
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bxl-figma' style="color: #0acf83"></i>
+                                            <h4>Figma</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 75%;"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Professional Skills -->
+                            <div class="bar carousel-item" data-aos="fade-up" data-aos-duration="600">
+                                <div class="skill-cta">
+                                    <h4>Professional Skills</h4>
+                                </div>
+                                <p>My professional attributes enable effective collaboration and successful project
+                                    delivery.</p>
+                                <div class="skill-wrapper">
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bx-bulb' style="color: #FFD700"></i>
+                                            <h4>Creativity</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                                    </div>
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bx-group' style="color: #1E90FF"></i>
+                                            <h4>Teamwork</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 95%;"></span></div>
+                                    </div>
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bx-brain' style="color: #8A2BE2"></i>
+                                            <h4>Problem Solving</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 80%;"></span></div>
+                                    </div>
+                                    <div class="skill-content">
+                                        <div class="skill-info">
+                                            <i class='bx bx-chat' style="color: #32CD32"></i>
+                                            <h4>Communication</h4>
+                                        </div>
+                                        <div class="progress-line"><span style="width: 90%;"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Other Technical Skills (kept as a separate bar for clarity) -->
+                            <div class="bar carousel-item" data-aos="fade-up" data-aos-duration="600">
                                 <div class="skill-cta">
                                     <h4>Other Technical Skills</h4>
                                 </div>
+                                <p>Additional technical proficiencies that contribute to efficient development
+                                    workflows.</p>
                                 <div class="skill-wrapper">
                                     <div class="skill-content">
                                         <div class="skill-info">
@@ -251,74 +369,34 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-
-<!-- -------Profesional skills ------------ -->
-        <section class="radial-bar" id="radial-bar">
-            <div class="container">
-                <div class="section-title" data-aos="fade-up" data-aos-duaration="600">
-                    <div class="title">
-                        <span>Professional Skills</span>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="radial-bars" data-aos="fade-up" data-aos-duaration="600">
-                        <svg viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage" data-aos="fade-up" data-aos-duaration="600">90%</div>
-                        <div class="text-1" data-aos="fade-up" data-aos-duaration="600">Creativity</div>
-                    </div>
-                    <div class="radial-bars" data-aos="fade-up" data-aos-duaration="600">
-                        <svg viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage" data-aos="fade-up" data-aos-duaration="600">95%</div>
-                        <div class="text-1" data-aos="fade-up" data-aos-duaration="600">Teamwork</div>
-                    </div>
-                    <div class="radial-bars" data-aos="fade-up" data-aos-duaration="600">
-                        <svg viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage" data-aos="fade-up" data-aos-duaration="600">80%</div>
-                        <div class="text-1" data-aos="fade-up" data-aos-duaration="600">Problem Solving</div>
-                    </div>
-                    <div class="radial-bars" data-aos="fade-up" data-aos-duaration="600">
-                        <svg viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage" data-aos="fade-up" data-aos-duaration="600">90%</div>
-                        <div class="text-1" data-aos="fade-up" data-aos-duaration="600">Communication</div>
+                    <!-- Carousel Navigation -->
+                    <button class="carousel-button prev js-carousel-prev"><i class='bx bx-chevron-left'></i></button>
+                    <button class="carousel-button next js-carousel-next"><i class='bx bx-chevron-right'></i></button>
+                    <div class="carousel-dots js-carousel-dots">
+                        <!-- Dots will be generated by JS -->
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Tecnical skills -->
 
         <!-- --------portfolio-------- -->
-        <section class="portfolio section">
+        <section class="portfolio section-padding" id="portfolio">
             <div class="container">
-                <div class="section-title" data-aos="fade-up" data-aos-duaration="600">
+                <div class="section-title" data-aos="fade-up" data-aos-duration="600">
                     <div class="title">
                         <span>My portfolio</span>
                     </div>
                     <h2>My Recent projects</h2>
                 </div>
-                <!-- ------sameple------------- -->
                 <div class="portfolio-txt">
-                    <div class="portfolio-img" data-aos="fade-up" data-aos-duaration="600">
-                        <img src="./images/web.jpg" alt="">
+                    <div class="portfolio-img" data-aos="fade-up" data-aos-duration="600">
+                        <img src="https://placehold.co/600x400/6366F1/ffffff?text=Project+1" alt="Project Image">
                         <div class="portfolio-text">
-                            <span>advert</span>
-                            <h5>Cartoon Astronaut</h5>
+                            <span>Web Development</span>
+                            <h5>E-commerce Platform Redesign</h5>
+                            <p>Revamped an existing e-commerce site, improving load times by 25% and increasing mobile
+                                conversion rates by 18% using React and Tailwind CSS. Implemented a new product
+                                filtering system.</p>
                             <div class="link">
                                 <h4>Github</h4>
                                 <a href="#"><i class='bx bxl-github'></i></a>
@@ -329,11 +407,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-img" data-aos="fade-up" data-aos-duaration="600">
-                        <img src="./images/web.jpg" alt="">
+                    <div class="portfolio-img" data-aos="fade-up" data-aos-duration="600">
+                        <img src="https://placehold.co/600x400/8B5CF6/ffffff?text=Project+2" alt="Project Image">
                         <div class="portfolio-text">
-                            <span>advert</span>
-                            <h5>Cartoon Astronaut</h5>
+                            <span>Graphic Design</span>
+                            <h5>Brand Identity for Startup "InnovateX"</h5>
+                            <p>Developed a complete brand identity, including logo, color palette, and typography, which
+                                led to a 30% increase in brand recognition in early user surveys. Used Adobe Illustrator
+                                and Photoshop.</p>
                             <div class="link">
                                 <h4>Github</h4>
                                 <a href="#"><i class='bx bxl-github'></i></a>
@@ -344,11 +425,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-img" data-aos="fade-up" data-aos-duaration="600">
-                        <img src="./images/web.jpg" alt="">
+                    <div class="portfolio-img" data-aos="fade-up" data-aos-duration="600">
+                        <img src="https://placehold.co/600x400/EC4899/ffffff?text=Project+3" alt="Project Image">
                         <div class="portfolio-text">
-                            <span>advert</span>
-                            <h5>Cartoon Astronaut</h5>
+                            <span>Web 3 Development</span>
+                            <h5>Decentralized Voting Application</h5>
+                            <p>Built a secure, transparent voting dApp on the Ethereum blockchain, ensuring immutable
+                                records and reducing fraud potential by 100%. Technologies: Solidity, Hardhat, React.
+                            </p>
                             <div class="link">
                                 <h4>Github</h4>
                                 <a href="#"><i class='bx bxl-github'></i></a>
@@ -359,11 +443,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-img" data-aos="fade-up" data-aos-duaration="600">
-                        <img src="./images/web.jpg" alt="">
+                    <div class="portfolio-img" data-aos="fade-up" data-aos-duration="600">
+                        <img src="https://placehold.co/600x400/3B82F6/ffffff?text=Project+4" alt="Project Image">
                         <div class="portfolio-text">
-                            <span>advert</span>
-                            <h5>Cartoon Astronaut</h5>
+                            <span>Backend Development</span>
+                            <h5>RESTful API for Mobile App</h5>
+                            <p>Designed and implemented a high-performance RESTful API using Node.js and Express,
+                                capable of handling 1000+ requests per second, supporting a new mobile application
+                                launch.</p>
                             <div class="link">
                                 <h4>Github</h4>
                                 <a href="#"><i class='bx bxl-github'></i></a>
@@ -377,50 +464,54 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- -------contact--------- -->
         <section class="contact section-padding" id="contact">
             <div class="container">
-                <div class="section-title" data-aos="fade-up" data-aos-duaration="600">
-                    <span class="title" data-aos="fade-up" data-aos-duaration="600">contact us</span>
-                    <h2 class="sub-title" data-aos="fade-up" data-aos-duaration="600">have any question or recommendation ?</h2>
+                <div class="section-title" data-aos="fade-up" data-aos-duration="600">
+                    <span class="title" data-aos="fade-up" data-aos-duration="600">contact us</span>
+                    <h2 class="sub-title" data-aos="fade-up" data-aos-duration="600">have any question or recommendation
+                        ?</h2>
                 </div>
                 <div class="grid contact-grid">
                     <div class="contact-info">
-                        <div class="contact-info-item" data-aos="fade-up" data-aos-duaration="600">
+                        <div class="contact-info-item" data-aos="fade-up" data-aos-duration="600">
                             <i class='bx bx-current-location'></i>
-                            <h3>ِAddress</h3>
+                            <h3>Address</h3>
                             <p>Ibadan, Oyo State</p>
                         </div>
-                        <div class="contact-info-item" data-aos="fade-up" data-aos-duaration="600">
+                        <div class="contact-info-item" data-aos="fade-up" data-aos-duration="600">
                             <i class="bx bxl-whatsapp"></i>
                             <h3>WhatsApp me</h3>
-                            <p><a href="">+234 816 644 0208</a></p>
+                            <p><a href="https://wa.me/2348166440208" target="_blank">+234 816 644 0208</a></p>
                         </div>
-                        <div class="contact-info-item" data-aos="fade-up" data-aos-duaration="600">
+                        <div class="contact-info-item" data-aos="fade-up" data-aos-duration="600">
                             <i class='bx bxl-gmail'></i>
                             <h3>Email me</h3>
                             <p>bellomubaraq875@gmail.com</p>
                         </div>
                     </div>
-                    <div class="contact-form" data-aos="fade-up" data-aos-duaration="600">
+                    <div class="contact-form" data-aos="fade-up" data-aos-duration="600">
                         <form action="https://formspree.io/f/xrbgbjlq" method="POST">
-                            <div class="input-box" data-aos="fade-up" data-aos-duaration="600">
+                            <div class="input-box" data-aos="fade-up" data-aos-duration="600">
                                 <input type="text" placeholder="Name" class="input-control" name="fullname" required>
                             </div>
-                            <div class="input-box" data-aos="fade-up" data-aos-duaration="600">
-                                <input type="email" placeholder="Email" class="input-control" name="email" required>
+                            <div class="input-box" data-aos="fade-up" data-aos-duration="600">
+                                <input type="email" placeholder="Email" class="input-control" name="email" required
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    title="Please enter a valid email address">
                             </div>
-                            <div class="input-box" data-aos="fade-up" data-aos-duaration="600">
+                            <div class="input-box" data-aos="fade-up" data-aos-duration="600">
                                 <input type="number" placeholder="Phone" class="input-control" name="phone" required>
                             </div>
-                            <div class="input-box" data-aos="fade-up" data-aos-duaration="600">
-                                <textarea placeholder="Message" class="input-control" name="message" required></textarea>
+                            <div class="input-box" data-aos="fade-up" data-aos-duration="600">
+                                <textarea placeholder="Message" class="input-control" name="message"
+                                    required></textarea>
                             </div>
-                            <button type="submit" class="btn" data-aos="fade-up" data-aos-duaration="600">Send Message</button>
+                            <button type="submit" class="btn" data-aos="fade-up" data-aos-duration="600">Send
+                                Message</button>
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -428,28 +519,30 @@
 
     <!-- footer section start -->
     <footer class="footer">
-        <h3 data-aos="fade-up" data-aos-duaration="600">follow us</h3>
-        <div class="social-links" data-aos="fade-up" data-aos-duaration="600">
-            <a href="https://web.facebook.com/bello.mubarak.92/" title="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="https://x.com/Mubarak20Bello" title="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="https://www.instagram.com/mubarak_adeyemi_bello/" title="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="https://github.com/Bellomubaraq875" title="github"><i class="bx bxl-github"></i></a>
-            <a href="https://www.instagram.com/marawqventures/" title="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <h3 data-aos="fade-up" data-aos-duration="600">follow us</h3>
+        <div class="social-links" data-aos="fade-up" data-aos-duration="600">
+            <a href="https://web.facebook.com/bello.mubarak.92/" title="facebook" target="_blank"><i
+                    class="bx bxl-facebook"></i></a>
+            <a href="https://x.com/Mubarak20Bello" title="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/mubarak_adeyemi_bello/" title="instagram" target="_blank"><i
+                    class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/Bellomubaraq875" title="github" target="_blank"><i
+                    class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/marawqventures/" title="linkedin" target="_blank"><i
+                    class="bx bxl-linkedin"></i></a>
         </div>
-        <div class="coder" >
-            <p>code by <a href="https://github.com/Bellomubaraq875">Mubaraq Bello</a></p>
+        <div class="coder">
+            <p>code by <a href="https://github.com/Bellomubaraq875" target="_blank">Mubaraq Bello</a></p>
         </div>
     </footer>
     <!-- footer section end -->
-    </div>
-    <!-- page wrapper end-->
-    
+
     <!-- style switcher start -->
     <div class="style-switcher js-style-switcher">
         <button type="button" class="style-switcher-toggler js-style-switcher-toggler">
             <i class="fas fa-cog"></i>
         </button>
-        <div class="style-main-switcher">
+        <div class="style-switcher-main">
             <h2>style switcher</h2>
             <div class="style-switcher-item">
                 <p>Theme color</p>
@@ -464,46 +557,19 @@
                     <input type="checkbox" class="js-dark-mode">
                     <div class="box"></div>
                 </label>
-    
             </div>
         </div>
     </div>
     <!-- style switcher end -->
 
+    <!-- Typed.js CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- Custom JavaScript -->
     <script src="app.js"></script>
+    <!-- Style Switcher JavaScript -->
     <script src="style-switcher.js"></script>
-    <script src="aos.js"></script>
 </body>
 </html>
-
-<!-- <div class="technical-bars" data-aos="fade-up" data-aos-duaration="600">
-                        <div class="bar"><i style="color: #147bbc" class="bx bxl-css3"></i>
-                            <div class="info">
-                                <span>CSS</span>
-                            </div>
-                            <div class="progress-line css">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="technical-bars" data-aos="fade-up" data-aos-duaration="600">
-                        <div class="bar"><i style="color: #b0bc1e" class="bx bxl-javascript"></i>
-                            <div class="info">
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="progress-line javascript">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="technical-bars" data-aos="fade-up" data-aos-duaration="600">
-                        <div class="bar"><i style="color: #69bcbc" class="bx bxl-react"></i>
-                            <div class="info">
-                                <span>React</span>
-                            </div>
-                            <div class="progress-line react" data-aos="fade-up" data-aos-duaration="600">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div> -->

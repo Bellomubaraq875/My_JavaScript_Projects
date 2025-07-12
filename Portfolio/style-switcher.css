@@ -1,3 +1,4 @@
+/* Style Switcher CSS */
 .style-switcher{
     position: fixed;
     right: 0;
@@ -34,7 +35,7 @@
 }
 .style-switcher h2{
     text-transform: capitalize;
-    font-size: var(--fs-x1);
+    font-size: var(--fs-xl);
     font-weight: 500;
     padding: 0 0 10px;
 }
@@ -128,7 +129,7 @@
 }
 .form-switch input:checked + .box{
     background-color: var(--main-color);
-    border-color: var(--main);
+    border-color: var(--main-color);
 }
 .form-switch input:focus + .box{
     box-shadow: var(--focus-shadow);

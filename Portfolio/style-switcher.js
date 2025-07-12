@@ -1,57 +1,58 @@
-
- // style-switcher
-
+// Style Switcher Toggle
 const styleSwitcherToggle = () => {
     const styleSwitcher = document.querySelector(".js-style-switcher");
-    const styleSwitcherToggle = document.querySelector(".js-style-switcher-toggler");
+    const styleSwitcherToggler = document.querySelector(".js-style-switcher-toggler");
 
-    styleSwitcherToggle.addEventListener("click", function(){
-        styleSwitcher.classList.toggle("open");
-        this.querySelector("i").classList.toggle("fa-times");
-        this.querySelector("i").classList.toggle("fa-cog");
-    });
+    if (styleSwitcherToggler && styleSwitcher) {
+        styleSwitcherToggler.addEventListener("click", function(){
+            styleSwitcher.classList.toggle("open");
+            this.querySelector("i").classList.toggle("fa-times");
+            this.querySelector("i").classList.toggle("fa-cog");
+        });
+    }
 }
 styleSwitcherToggle();
 
-// theme color
-
+// Theme Color adjustment via hue slider
 const themeColor = () => {
     const hueSlider = document.querySelector(".js-hue-slider");
-    const html = document.querySelector("html");
+    const html = document.documentElement; // Represents the <html> element
 
     const setHue = (value) => {
         html.style.setProperty("--hue", value);
-        document.querySelector(".js-hue").innerHTML = value;
+        const hueDisplay = document.querySelector(".js-hue");
+        if (hueDisplay) {
+            hueDisplay.innerHTML = value;
+        }
     }
 
-    hueSlider.addEventListener("input", function () {
-        setHue(this.value);
-        // user's preference in local storge
-        localStorage.setItem("--hue", this.value)
-    });
+    if (hueSlider) {
+        hueSlider.addEventListener("input", function () {
+            setHue(this.value);
+            // Save user's preference to local storage
+            localStorage.setItem("--hue", this.value)
+        });
 
-    const slider = (value) => {
-        hueSlider.value = value;
-    }
-    // check for saved user preference, if any, on load of the website
-    if (localStorage.getItem("--hue") !== null){
-        setHue(localStorage.getItem("--hue"));
-        slider(localStorage.getItem("--hue"));
-    }
-    else{
-        // default color
-        const hue = getComputedStyle(html).getPropertyValue("--hue");
-        setHue(hue);
-        slider(hue.split(" ").join(""));
+        // Load saved user preference on page load
+        if (localStorage.getItem("--hue") !== null){
+            setHue(localStorage.getItem("--hue"));
+            hueSlider.value = localStorage.getItem("--hue"); // Set slider position
+        }
+        else{
+            // Set default hue if no preference is saved
+            const hue = getComputedStyle(html).getPropertyValue("--hue").trim();
+            setHue(hue);
+            hueSlider.value = hue;
+        }
     }
 }
 themeColor();
 
-// light & dark mode
+// Light & Dark Mode toggle
 const themeLightDark = () => {
     const darkModeCheckbox = document.querySelector(".js-dark-mode");
 
-    const themeMode  = () => {
+    const themeMode = () => {
         if (localStorage.getItem("theme-dark") === "false"){
             document.body.classList.remove("t-dark");
         }
@@ -60,17 +61,21 @@ const themeLightDark = () => {
         }
     }
 
-    darkModeCheckbox.addEventListener("click", function() {
-        // set user's preference in local storage
-        localStorage.setItem("theme-dark", this.checked);
-        themeMode();
-    })
-    // check for saved user preference, if any, on load of the website
-    if(localStorage.getItem("theme-dark") !== null) {
-        themeMode();
-    }
-    if(document.body.classList.contains("t-dark")) {
-        darkModeCheckbox.checked = true;
+    if (darkModeCheckbox) {
+        darkModeCheckbox.addEventListener("click", function() {
+            // Save user's preference to local storage
+            localStorage.setItem("theme-dark", this.checked);
+            themeMode();
+        });
+
+        // Load saved user preference on page load
+        if(localStorage.getItem("theme-dark") !== null) {
+            themeMode();
+        }
+        // Set checkbox state based on current theme
+        if(document.body.classList.contains("t-dark")) {
+            darkModeCheckbox.checked = true;
+        }
     }
 }
 themeLightDark();
